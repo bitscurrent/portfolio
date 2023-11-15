@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!----*****Dark mode****--->
+                    <button id="dark-mode-toggle">Dark Mode</button>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" id="openbarmenu" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Dilip</span> Boidya from India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************  about  ************** -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../images/user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+                    <p>I am an Electronics Engineer, I am very passonate in
+                        technologies, I like coding, making electronics, web developments.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('software-skills')">Software Skills</p>
+                        <p class="tab-links" onclick="opentab('hardware-skills')">Hardware Skills</p>
+
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents" id="software-skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Language</span><br>HTML<br>CSS <br>Python <br>C <br>JavaScript </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="hardware-skills">
+                        <ul>
+                            <li><span>PCB designing</span><br>Have good commands in EDA tools like KiCad, EasyEDA.</li>
+                            <li><span>Circuit Simulation</span><br>Former fellow at eSim EDA tool responsible for device
+                                modeling</li>
+                            <li><span>Soldering</span><br>Iron tip soldering</li>
+                            <li><span>Repairing Electrical Appliances</span><br>LCD/LED monitors, fans, etc</li>
+                            <li><span>Microcontroller</span><br>Arduino</br>Raspberry Pi<br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Electronics and Communication Engineering</li>
+                            <li><span>Tezpur University</span><br><i class="fa fa-map-marker"></i> Assam, India</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------Portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+
+
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+
+                    <!-- <h3>Social Media App</h3> -->
+                    <!-- <p>The app connects you to the talent people around the world. See here... -->
+
+
+                    <img class="work-pic" src="../images/work-1.png" alt="work pic 1">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+
+                        <p class="work-desc"> Users have the privilege to view the exclusive weather forecast tailored to their specific needs and preferences.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- <div class="work">
+
+
+
+                    <img class="work-pic" src="../images/work-2.png" alt="work pic 2">
+
+                    <div class="layer">
+                        <h3>Linux</h3>
+
+                        <p class="work-desc"> In this social App, disabled users can talk with sign language with people
+                            dont undrestand sign language.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                </div> -->
+
+
+                <!-- <div class="work">
+
+                    <img class="work-pic" src="../images/work-3.png" alt="work pic 3">
+
+                    <div class="layer">
+                        <h3>Trading App</h3>
+
+                        <p class="work-desc"> In this social App, disabled users can talk with sign language with
+                            people
+                            dont undrestand sign language.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                </div> -->
+
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+
+    </div>
+
+    <!------******Contacts*****-------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="geo-location">Assam, India</p>
+                    </div>
+<!-- 
+                    <i class="fas fa-mobile-alt"></i>
+                    <p class="mobile-num">+91-1234567890</p> -->
+
+                    <div class="social-icons">
+                        <a href="https://dilipboidya.office@gmail.com"><i class="fas fa-envelope"></i> </a>
+                        <a href="https://www.github.com/dilipboidya"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/dilipboidya"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="../images/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+
+
+                <div class="contact-right">
+                    <h3>Contact Form</h3>
+                    <form>
+                        <input type="text" placeholder="First Name" name="First Name" required>
+                        <input type="text" placeholder="Last Name" name="Last Name" required>
+                        <input type="email" placeholder="email@email.com" required>
+                        <textarea name="Message" rows="6" placeholder="Your message..."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <p>Copyright <i class="fas fa-copyright"></i>
+            Dilip, with Made with <i class="fas fa-heart"></i> by GreatStack.</p>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
