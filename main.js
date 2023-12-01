@@ -28,13 +28,17 @@ if (darkModeEnabled) {
 }
 
 // Toggle dark mode when the button is clicked
-document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+let darkMode = document.getElementById('dark-mode-toggle')
+darkMode.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 
     // Save the user's preference in local storage
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('darkMode', 'enabled');
-    } else {
+        darkMode.textContent = darkMode.textContent ==  "Dark" ? "Light" : "Dark";
+    } 
+    
+    else {
         localStorage.setItem('darkMode', 'disabled');
     }
 });

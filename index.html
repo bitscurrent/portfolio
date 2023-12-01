@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 
-<body>
-
-    
+<body>    
     <div id="header">
         <div class="container">
             <nav>
@@ -25,8 +23,9 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+
                     <!----*****Dark mode****--->
-                    <button id="dark-mode-toggle">Dark Mode</button>
+                    <button id="dark-mode-toggle">Light</button>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" id="openbarmenu" onclick="openmenu()"></i>
@@ -47,8 +46,7 @@
                     <img src="images/user.jpeg" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    
+                    <h1 class="sub-title">About Me</h1>                    
                     <p>I am an Electronics Engineer, I am very passonate in
                         technologies, I like coding, making electronics, web developments.</p>
                     <div class="tab-titles">
@@ -87,7 +85,6 @@
                         <ul>
                             <li><span>B.Tech</span><br>Electronics and Communication Engineering</li>
                             <li><span>Tezpur University</span><br><i class="fa fa-map-marker"></i> Assam, India</li>
-
                         </ul>
                     </div>
 
@@ -99,56 +96,16 @@
     <!------------Portfolio-------->
     <div id="portfolio">
         <div class="container">
-
-
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
 
                 <div class="work">
-
-                    <!-- <h3>Social Media App</h3> -->
-                    <!-- <p>The app connects you to the talent people around the world. See here... -->
-
-                    <img class="work-pic" src="images/work-1.png" alt="work pic 1">
+                   <img class="work-pic" src="images/work-1.png" alt="work pic 1">
                     <div class="layer">
                         <h3>Weather App</h3>
                         <p class="work-desc"> Users have the privilege to view the exclusive weather forecast tailored to their specific needs and preferences.</p>
                     </div>
-
                 </div>
-
-                <!-- <div class="work">
-
-
-
-                    <img class="work-pic" src="../images/work-2.png" alt="work pic 2">
-
-                    <div class="layer">
-                        <h3>Linux</h3>
-
-                        <p class="work-desc"> In this social App, disabled users can talk with sign language with people
-                            dont undrestand sign language.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-
-                </div> -->
-
-
-                <!-- <div class="work">
-
-                    <img class="work-pic" src="../images/work-3.png" alt="work pic 3">
-
-                    <div class="layer">
-                        <h3>Trading App</h3>
-
-                        <p class="work-desc"> In this social App, disabled users can talk with sign language with
-                            people
-                            dont undrestand sign language.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-
-                </div> -->
-
 
             </div>
             <a href="#" class="btn">See more</a>
@@ -156,7 +113,6 @@
     </div>
 
     <!------******Contacts*****-------->
-
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -165,9 +121,7 @@
 
                     <div class="location">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p class="geo-location">Assam, India.</p>
-
-                        
+                        <p class="geo-location">Assam, India.</p>                        
                     </div>
 
                     <div class="social-icons">
@@ -182,11 +136,11 @@
 
                 <div class="contact-right">
                     <h3>Contact Form</h3>
-                    <form>
+                    <form  method="post" action="https://formsubmit.co/0062e40a65de9460b51dfb8b2aab0e9b" enctype="multipart/form-data">
                         <input type="text" placeholder="First Name" name="First Name" required>
                         <input type="text" placeholder="Last Name" name="Last Name" required>
-                        <input type="email" placeholder="email@email.com" required>
-                        <textarea name="Message" rows="6" placeholder="Your message..."></textarea>
+                        <input type="email" placeholder="youremail@email.com" name="email" required>
+                        <textarea name="message" rows="6" placeholder="Your message..."></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
@@ -200,7 +154,6 @@
             Dilip, with Made with <i class="fas fa-heart"></i> by GreatStack.</p>
     </footer>
 
-    <script src="main.js"></script>
 </body>
 
 </html>
